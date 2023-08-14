@@ -1,0 +1,230 @@
+/* Project 4
+Name: Dennis Giesbrecht
+Date: August 1
+Description: Company website  */
+
+body {
+    background-color: rgb(224, 217, 202);
+    margin: 0%;
+}
+
+#heading {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#nav {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0px 100px;
+}
+
+#nav ul li {
+    list-style: none;
+    padding: 15px 0px;
+    flex: 1;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#nav ul li a:hover {
+    color: rgb(207, 151, 18);
+}
+
+.forest {
+    object-fit: cover;
+    width: 100%;
+    height: 200px; 
+}
+
+
+/* Content */
+#section {
+    display: flex;
+}
+
+#main {
+    text-align: center;
+    width: 700px;
+    margin: auto;
+    font-size: 1.3em;
+}
+
+#about {
+    font-size: 1.7em;
+}
+
+.kitchen {
+    float: left;
+    max-width: 400px;
+    height: auto;
+    margin: 50px 50px;
+}
+
+.dinningright {
+    float: right;
+    max-width: 400px;
+    height: auto;
+    margin: 50px 50px;
+}
+
+
+/* Footer */
+#navfooter {
+    display: flex;
+    background-color: black; 
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    padding-left: 0;
+    text-align: center;
+}
+
+#navfooter ul {
+    margin: 0;
+}
+
+#navfooter ul li {
+    list-style: none;
+    padding: 15px 0px;
+    flex: 1;
+}
+
+#navfooter ul li a {
+    text-decoration: none;
+    color: rgb(151, 151, 151);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#navfooter ul li a:hover {
+    color: rgb(207, 151, 18);
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    margin: 12px 40px;
+}
+
+
+/* Products */
+#figure {
+    text-align: center;
+}
+
+#figure figure {
+    display: inline-block;
+}
+
+.img {
+    width: 300px;
+    height: auto;
+    margin-top: 30px;
+}
+
+
+/* Contact */
+div#wrapper {
+    width: 700px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    padding: 5px;
+    border: none;
+}
+
+fieldset:last-child {
+    margin-bottom: 0px;
+}
+
+hr {
+    margin-bottom: 15px;
+}
+
+legend {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: 14pt;
+}
+
+ul {
+    margin: 0;
+}
+
+input:not(input[type="radio"]) {
+    width: 200px;
+}
+
+.contact {
+    width: 130px;
+    display: inline-block;
+    text-align: right;
+}
+
+textarea {
+    width: 90%;
+}
+
+input[type=text], button[type=submit], button[type=reset]
+{
+	padding: 5px 5px;
+}
+
+.formfield
+{
+	
+	margin: 10px 0px;
+}
+
+.contact_error {
+    margin-left: 130px;
+}
+
+.error
+{
+	color: red;
+	font-style: italic;
+	font-weight: bold;
+	padding: 10px 0;
+	display: none;
+}
+
+@media (max-width: 600px) {
+    #section {
+        display: inline-block;
+        margin: 10px 0; 
+        padding: 10px;
+    }
+
+    #section main {
+        width: 100%;
+        text-align: center;
+    }
+
+    #about p {
+        margin-right: 50%;
+        margin-left: 50%;
+        margin-bottom: 500px;
+    }
+
+    #section img {
+        margin: 0px;
+    }
+}

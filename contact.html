@@ -1,0 +1,77 @@
+<!-- Project 4
+Name: Dennis Giesbrecht
+Date: August 1
+Description: Company website  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="validation.js"></script>
+</head>
+<body>
+    <header id="heading">
+        <div>
+            <h1>Northern Touch WoodCraft</h1>
+        </div>
+    </header>
+    <nav id="nav">
+        <ul>
+            <li><a href="./index.html">About Us</a></li>
+            <li><a href="./products.html">Products and Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>           
+        </ul>
+    </nav>
+    <img src="images/forest.jpg" alt="" class="forest">
+    <div id="wrapper">
+        <form id="orderform" method="post"
+        action="http://127.0.0.1:5501/index.html">
+        <fieldset>
+            <legend>Contact Us</legend>
+            <hr>
+            <div class="formfield">
+                <label for="name" class="contact">Name:</label>
+                <input type="text" name="name" id="name" autofocus="autofocus">
+                <div class="contact_error error" id="name_error">* Please enter your name.</div>
+            </div>
+            <div class="formfield">
+                <label for="phonenumber" class="contact">Phone Number:</label>
+                <input type="text" id="phonenumber" name="phonenumber">
+                <div class="contact_error error" id="phonenumber_error">* Please enter a Phone Number.</div>
+                <div class="contact_error error" id="phonenumberformat_error">* Invalid Phone Number</div>
+            </div>
+            <div class="formfield">
+                <label for="email" class="contact">Email:</label>
+                <input type="text" id="email" name="email">
+                <div class="contact_error error" id="email_error">* Please enter your Email.</div>
+                <div class="contact_error error" id="emailformat_error">* Invalid email address</div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Comments</legend>
+            <hr>
+            <label for="feedback">Have any comments about anything?</label>
+            <textarea name="feedback" id="feedback" cols="50" rows="7"></textarea>
+        </fieldset>
+        <fieldset>
+            <hr>
+            <button type="reset">Clear</button>
+            <button type="submit">Submit</button>
+        </fieldset>
+        </form>
+    </div>
+    <footer id="footer">
+        <img src="images/logo.jpeg" alt="Circular of a forest and end grain of a tree with the words Northern Touch on it" class="logo">
+        <nav id="navfooter">
+            <ul>
+                <li><a href="./index.html">About Us</a></li>
+                <li><a href="./products.html">Products and Services</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
